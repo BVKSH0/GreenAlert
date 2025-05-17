@@ -1,0 +1,279 @@
+/* HOME */
+
+#hero {
+  background-image: url("assets/srghero (1).png");
+  height: 91vh;
+  width: 100%;
+  background-size: cover;
+  padding: 0px 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 9rem;
+  line-height: 64px;
+  color: #222;
+  margin: -120px 0px 0px 0px;
+}
+
+.green {
+  color: #006a4e;
+}
+.ai {
+  color: #ff3131;
+}
+.ert {
+  color: #ff3131;
+}
+
+p {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #1c1c1c;
+  margin: 45px 0 3.8px 27px;
+}
+
+#hero button {
+  position: relative; /* Needed for pseudo-element positioning */
+  background-color: transparent;
+  color: #c2a770;
+  border: 1px solid transparent;
+  border-radius: 1vh;
+  padding: 8px 16px 8px 16px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.27s;
+  overflow: hidden; /* Keeps the blur contained */
+  z-index: 1; /* Ensures text stays above blur */
+}
+
+#hero .hrbtn {
+  margin-left: 25px;
+}
+
+/* Creates the blurred background */
+#hero button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(7, 58, 55, 0.5); /* Original color with transparency */
+  backdrop-filter: blur(5px); /* Blur intensity */
+  z-index: -1; /* Sends behind text */
+  border-radius: 5vh; /* Match button radius */
+}
+
+/* Hover effects */
+#hero button:hover {
+  color: #09968c; /* Brighter text on hover */
+}
+
+#hero button:hover::before {
+  background: rgba(7, 58, 55, 0.7); /* Darker on hover */
+}
+
+/* WEATHER FORECAST */
+#weather_forecast {
+  width: 100%;
+  padding: 80px 0; /* Adjust vertical spacing as needed */
+  position: relative; /* For child absolute positioning if needed */
+}
+
+.weather-container {
+  max-width: 1200px; /* Or your preferred max width */
+  margin: 0 auto; /* Centers the container */
+  padding: 0 20px; /* Prevents edge sticking */
+}
+
+#weather_forecast .title {
+  text-align: center; /* Horizontally centers text */
+  margin-bottom: 40px; /* Space below title */
+}
+
+#weather_forecast .title h2 {
+  display: inline-block; /* Allows pseudo-element to match text width */
+  font-size: 3.4rem;
+  color: #006a4e;
+  position: relative; /* For the underline */
+}
+
+#weather_forecast .title h2::before {
+  content: "";
+  position: absolute;
+  width: 100%; /* Full width of text */
+  height: 2px;
+  background-color: #006a4e;
+  bottom: -10px; /* Position below text */
+  left: 0;
+}
+
+/* WEATHER FORECAST STYLES */
+.location-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.auto-detect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.or-divider {
+  color: #006a4e;
+  font-weight: bold;
+}
+
+.manual-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#location-input {
+  padding: 0.5rem;
+  border: 1px solid #006a4e;
+  border-radius: 4px;
+  min-width: 200px;
+}
+
+.weather-btn {
+  background-color: #006a4e;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.weather-btn:hover {
+  background-color: #088178;
+}
+
+.current-location {
+  margin: 1rem 0;
+  font-style: italic;
+  color: #465b52;
+}
+
+.current-weather {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.temp-display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #006a4e;
+}
+
+.temp-unit {
+  font-size: 1.5rem;
+  vertical-align: super;
+}
+
+.weather-icon img {
+  width: 80px;
+  height: 80px;
+}
+
+.weather-details {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #465b52;
+}
+
+.forecast-container {
+  margin-top: 3rem;
+}
+
+.forecast-container h3 {
+  text-align: center;
+  color: #006a4e;
+  margin-bottom: 1rem;
+}
+
+.forecast-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.forecast-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-day {
+  font-weight: bold;
+  color: #006a4e;
+  margin-bottom: 0.5rem;
+}
+
+.forecast-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast-temp {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
+
+.high-temp {
+  color: #ff3131;
+}
+
+.low-temp {
+  color: #006a4e;
+}
+/* Add these styles to your CSS */
+.last-updated {
+  font-size: 0.8rem;
+  color: #666;
+  display: block;
+  margin-top: 0.3rem;
+}
+
+.weather-condition {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #006a4e;
+  font-weight: 500;
+}
