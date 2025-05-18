@@ -21,14 +21,14 @@
         <div id="navbar">
           <ul>
             <li><a class="active" href="Index.html">Home</a></li>
-            <li><a href="shop.html">Weather forecast</a></li>
-            <li><a href="blog.html">Weather Prediction</a></li>
+            <li><a href="#weather_forecast">Weather forecast</a></li>
+            <li><a href="#weather_prediction">Weather Prediction</a></li>
             <li><a href="about.html">Articles</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 
-        <div id="ham-nav">
+        <!-- <div id="ham-nav">
           <div class="hamburger-nav">
             <div class="hamburger-menu">
               <div class="hamburger-icon" onclick="toggleMenu()">
@@ -46,7 +46,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </nav>
     </section>
 
@@ -65,7 +65,7 @@
       </div>
     </section>
 
-    <section id="weather_forecast">
+    <section class="section-s" id="weather_forecast">
       <div class="weather-container">
         <div class="title">
           <h2>Weather Forecast</h2>
@@ -137,5 +137,45 @@
         </div>
       </div>
     </section>
+
+    <section id="weather_prediction">
+      <div class="title">
+        <h2>Weather Prediction</h2>
+      </div>
+      <div class="weather_prediction">
+        <div class="ai-prediction-header">
+          <h3>AI-Powered 7-Day Forecast</h3>
+          <p
+            >Our machine learning model analyzes historical patterns and current
+            data for accurate predictions</p
+          >
+        </div>
+
+        <div class="ai-prediction-container">
+          <div class="ai-prediction-cards" id="ai-forecast-cards">
+            <!-- Cards will be inserted here by JavaScript -->
+          </div>
+        </div>
+
+        <div class="ai-model-info">
+          <div class="model-details">
+            <h4>About Our AI Model</h4>
+            <p>This forecast uses our proprietary GreenAI model trained on:</p>
+            <ul>
+              <li>10+ years of historical weather data</li>
+              <li>Real-time atmospheric sensors</li>
+              <li>Satellite imagery analysis</li>
+              <li>Neural network predictions</li>
+            </ul>
+          </div>
+          <div class="accuracy-indicator">
+            <div class="accuracy-meter">
+              <div class="accuracy-fill" style="width: 92%"></div>
+            </div>
+            <span>92% Prediction Accuracy</span>
+          </div>
+        </div>
+      </div></section
+    >
   </body>
 </html>

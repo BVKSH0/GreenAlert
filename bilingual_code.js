@@ -119,3 +119,100 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize with default location
   getWeatherData("Dhaka");
 });
+
+// Updated JavaScript for horizontal cards
+document.addEventListener("DOMContentLoaded", function () {
+  // Sample AI prediction data - replace with real API calls
+  const aiPredictions = [
+    {
+      day: "Sun",
+      date: "5/18/2025",
+      condition: "Heavy Rain",
+      icon: "308",
+      max_temp: 30,
+      min_temp: 19,
+      confidence: 85,
+    },
+    {
+      day: "Mon",
+      date: "5/19/2025",
+      condition: "Cloudy",
+      icon: "119",
+      max_temp: 33,
+      min_temp: 15,
+      confidence: 88,
+    },
+    {
+      day: "Tue",
+      date: "5/20/2025",
+      condition: "Thunderstorm",
+      icon: "389",
+      max_temp: 33,
+      min_temp: 19,
+      confidence: 82,
+    },
+    {
+      day: "Wed",
+      date: "5/21/2025",
+      condition: "Thunderstorm",
+      icon: "389",
+      max_temp: 29,
+      min_temp: 16,
+      confidence: 78,
+    },
+    {
+      day: "Thu",
+      date: "5/22/2025",
+      condition: "Light Rain",
+      icon: "293",
+      max_temp: 25,
+      min_temp: 19,
+      confidence: 90,
+    },
+    {
+      day: "Fri",
+      date: "5/23/2025",
+      condition: "Heavy Rain",
+      icon: "308",
+      max_temp: 32,
+      min_temp: 15,
+      confidence: 85,
+    },
+    {
+      day: "Sat",
+      date: "5/24/2025",
+      condition: "Light Rain",
+      icon: "293",
+      max_temp: 30,
+      min_temp: 17,
+      confidence: 92,
+    },
+  ];
+
+  // Display AI Predictions
+  const displayAIPredictions = () => {
+    const container = document.getElementById("ai-forecast-cards");
+    container.innerHTML = aiPredictions
+      .map(
+        (pred) => `
+      <div class="ai-forecast-card">
+        <div class="ai-forecast-day">${pred.day}</div>
+        <div class="ai-forecast-date">${pred.date}</div>
+        <div class="ai-forecast-icon">
+          <img src="https://cdn.weatherapi.com/weather/64x64/day/${pred.icon}.png" alt="${pred.condition}">
+        </div>
+        <div class="ai-forecast-prediction">${pred.condition}</div>
+        <div class="ai-temp-range">
+          <span class="ai-high-temp">${pred.max_temp}°</span> / 
+          <span class="ai-low-temp">${pred.min_temp}°</span>
+        </div>
+        <div class="ai-confidence">${pred.confidence}% confidence</div>
+      </div>
+    `
+      )
+      .join("");
+  };
+
+  // Initialize
+  displayAIPredictions();
+});

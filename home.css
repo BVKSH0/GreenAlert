@@ -79,9 +79,11 @@ p {
 }
 
 /* WEATHER FORECAST */
+
 #weather_forecast {
   width: 100%;
   padding: 80px 0; /* Adjust vertical spacing as needed */
+  scroll-margin-top: 8vh;
   position: relative; /* For child absolute positioning if needed */
 }
 
@@ -91,29 +93,8 @@ p {
   padding: 0 20px; /* Prevents edge sticking */
 }
 
-#weather_forecast .title {
-  text-align: center; /* Horizontally centers text */
-  margin-bottom: 40px; /* Space below title */
-}
-
-#weather_forecast .title h2 {
-  display: inline-block; /* Allows pseudo-element to match text width */
-  font-size: 3.4rem;
-  color: #006a4e;
-  position: relative; /* For the underline */
-}
-
-#weather_forecast .title h2::before {
-  content: "";
-  position: absolute;
-  width: 100%; /* Full width of text */
-  height: 2px;
-  background-color: #006a4e;
-  bottom: -10px; /* Position below text */
-  left: 0;
-}
-
 /* WEATHER FORECAST STYLES */
+
 .location-section {
   text-align: center;
   margin: 2rem 0;
@@ -160,8 +141,8 @@ p {
 
 .current-location {
   margin: 1rem 0;
-  font-style: italic;
-  color: #465b52;
+  /* font-style: italic; */
+  color: #3d745c;
 }
 
 .current-weather {
@@ -266,6 +247,8 @@ p {
 /* Add these styles to your CSS */
 .last-updated {
   font-size: 0.8rem;
+  font-style: italic;
+
   color: #666;
   display: block;
   margin-top: 0.3rem;
@@ -276,4 +259,205 @@ p {
   margin-top: 0.5rem;
   color: #006a4e;
   font-weight: 500;
+}
+
+/* AI Prediction Styles - Updated for Horizontal Scrolling */
+.weather_prediction {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 2vh;
+  margin: 3vh auto;
+  max-width: 85vw;
+  box-shadow: 0 4px 20px rgba(0, 106, 78, 0.1);
+}
+
+#weather_prediction {
+  scroll-margin-top: 15vh;
+}
+
+.ai-prediction-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.ai-prediction-header h3 {
+  color: #006a4e;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.ai-prediction-header p {
+  color: #465b52;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Horizontal Scrolling Container */
+.ai-prediction-container {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 20px; /* Space for scrollbar */
+  margin: 2rem 0;
+}
+
+.ai-prediction-cards {
+  display: inline-flex; /* Changed to inline-flex */
+  justify-content: space-around;
+  gap: 1.5rem;
+  padding: 10px 5px;
+  min-width: 100%;
+}
+
+.ai-forecast-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border-top: 3px solid #006a4e;
+  min-width: 180px;
+  flex-shrink: 0; /* Prevent cards from shrinking */
+}
+
+.ai-forecast-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 106, 78, 0.1);
+}
+
+.ai-forecast-day {
+  font-weight: 700;
+  color: #006a4e;
+  margin-bottom: 0.5rem;
+}
+
+.ai-forecast-date {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.ai-forecast-icon img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.ai-forecast-prediction {
+  font-size: 0.9rem;
+  color: #333;
+  margin: 0.8rem 0;
+  min-height: 40px;
+}
+
+.ai-temp-range {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.ai-high-temp {
+  color: #ff3131;
+  font-weight: bold;
+}
+
+.ai-low-temp {
+  color: #006a4e;
+}
+
+.ai-confidence {
+  display: inline-block;
+  background: rgba(0, 106, 78, 0.1);
+  color: #006a4e;
+  padding: 0.3rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.ai-model-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px dashed #ccc;
+}
+
+.model-details {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 2rem;
+}
+
+.model-details h4 {
+  color: #006a4e;
+  margin-bottom: 1rem;
+}
+
+.model-details ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.model-details li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.model-details li:before {
+  content: "•";
+  color: #ff3131;
+  position: absolute;
+  left: 0;
+}
+
+.accuracy-indicator {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.accuracy-meter {
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.accuracy-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #006a4e, #4caf50);
+  border-radius: 5px;
+}
+
+/* Custom scrollbar for horizontal container */
+.ai-prediction-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.ai-prediction-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.ai-prediction-container::-webkit-scrollbar-thumb {
+  background: #006a4e;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .ai-model-info {
+    flex-direction: column;
+  }
+  .model-details {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .ai-forecast-card {
+    min-width: 160px;
+  }
 }
