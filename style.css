@@ -26,7 +26,7 @@ body {
 
 .title h2 {
   display: inline-block; /* Allows pseudo-element to match text width */
-  font-size: 3.4rem;
+  font-size: 5rem;
   color: #006a4e;
   position: relative; /* For the underline */
 }
@@ -37,7 +37,7 @@ body {
   width: 100%; /* Full width of text */
   height: 2px;
   background-color: #006a4e;
-  bottom: -10px; /* Position below text */
+  bottom: -15px; /* Position below text */
   left: 0;
 }
 
@@ -128,7 +128,7 @@ p {
 
 #navbar li a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #1a1a1a;
   transition: 0.15s ease-in;
