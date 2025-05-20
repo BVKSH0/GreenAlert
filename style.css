@@ -258,3 +258,187 @@ nav .nav-icon {
 .hamburger-icon span:first-child {
   transform: none;
 }
+
+/* CONTACT */
+
+#contact .title {
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 15vh;
+}
+
+#contact {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: ☐ #0a101e;
+  padding: 5% 10%;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 40px;
+}
+
+.contact-container form {
+  width: 50%;
+}
+
+.contact-info {
+  width: 45%;
+}
+#contact .contact h2 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.content h2,
+.contact-container h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #ebebeb;
+}
+
+.content p {
+  font-size: 16px;
+  color: #ebebeb;
+  margin: 15px 0 20px 0;
+}
+
+#contact .contact-container form,
+#contact .contact-container .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  /* width: 100%; */
+  /* gap: 20%; */
+}
+#contact .contact-container form input,
+#contact .contact-container form textarea {
+  width: 100%;
+  padding: 22px 40px;
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: #1d2330;
+  border: 1px solid #292525;
+  color: #fff;
+}
+#contact .contact-container form input::placeholder,
+#contact .contact-container form textarea::placeholder {
+  font-size: 14px;
+}
+#contact .contact-container form button {
+  padding: 20px 35px;
+  background-color: #fec544;
+  border-radius: 30px;
+  margin: 20px 0;
+}
+#contact .contact-info .content p,
+#contact .contact-info .content .box a {
+  color: #a9adb8;
+  font-size: 17px;
+}
+
+#contact .contact-info .icon-container {
+  display: flex;
+  flex-direction: column;
+}
+#contact .contact-info .icons {
+  display: flex;
+  flex-direction: row;
+}
+
+#contact .contact-info .box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#contact .contact-info .box .icon {
+  margin: 0;
+  padding: 12px; /* Adjust padding for better icon centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+}
+
+#contact .contact-info .box h3 {
+  font-size: 1.5rem;
+
+  margin-bottom: 5px;
+  color: #a9adb8;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+#contact .contact-info h3 {
+  font-size: 1.5rem;
+}
+
+#contact .contact-info .box .email,
+#contact .contact-info .box .phone,
+#contact .contact-info .box .address {
+  flex: 1;
+}
+
+.address p {
+  font-size: 16px;
+  color: #ebebeb;
+  margin: 15px 0 20px 0;
+}
+
+#contact .contact-info .icon-container h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #ebebeb;
+}
+
+#contact .icon-container .icon {
+  font-size: 50px;
+  color: #a9adb8;
+  margin: 0 2px;
+  /* border: 1px solid #646060;
+  border-radius: 28px; */
+  height: 30px;
+  width: 30px;
+  padding: 0 0px 0 0px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #070d1b;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+#contact .icon-container .icon1 {
+  margin: 0px 2px 0px 0px;
+}
+
+#copy {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ☐ #070d1b;
+}
+#copy a {
+  color: #333333;
+  text-decoration: none;
+  cursor: default;
+}
+#copy a span {
+  text-decoration: underline;
+  cursor: pointer;
+}

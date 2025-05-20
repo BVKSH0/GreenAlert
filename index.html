@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="home.css" />
     <title>GreenAIert</title>
-    <script src="bilingual_code.js"></script>
+    <script src="app.js"></script>
+    <script src="bilingual.js"></script>
   </head>
   <body>
     <section id="header">
@@ -20,13 +21,13 @@
       <nav>
         <div id="navbar">
           <ul>
-            <li><a class="active" href="Index.html">Home</a></li>
+            <li><a class="active" href="#hero">Home</a></li>
             <li><a href="#weather_forecast">Weather Forecast</a></li>
             <li><a href="#farming-advisory">Crop Suggestions</a></li>
-            <li><a href="#">Green City Initiative</a></li>
-            <li><a href="#">Marketplace</a></li>
-            <li><a href="about.html">Articles</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#green-city">Green City Initiative</a></li>
+            <li><a href="marketplace.html">Marketplace</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
 
@@ -224,7 +225,7 @@
       <div class="gci_cards">
         <div class="gci-card vertical_g">
           <div class="card-content">
-            <h3>vertical gardening</h3>
+            <h3>Vertical gardening</h3>
             <p
               >Maximize small spaces by growing plants vertically on walls or
               trellises</p
@@ -235,7 +236,7 @@
 
         <div class="gci-card container_g">
           <div class="card-content">
-            <h3>container gardening</h3>
+            <h3>Container gardening</h3>
 
             <p>Grow plants in pots and containers on balconies and terraces</p>
             <button>Learn Techniques</button>
@@ -244,7 +245,7 @@
 
         <div class="gci-card rooftop_g">
           <div class="card-content">
-            <h3>rooftop gardening</h3>
+            <h3>Rooftop gardening</h3>
 
             <p>Transform unused rooftops into productive green spaces</p>
             <button>Learn Techniques</button>
@@ -256,6 +257,101 @@
             <h3>Community gardening</h3>
             <p>Start or join shared gardening spaces in your neighborhood</p>
             <button>Learn Techniques</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="title">
+        <h2>CONTACT</h2>
+      </div>
+      <div class="contact-container">
+        <form action="#">
+          <h2>JUST SAY HELLO!</h2>
+          <input type="text" name="name" class="name" placeholder="YOUR NAME" />
+          <input
+            type="email"
+            name="email"
+            class="email"
+            placeholder="YOUR EMAIL"
+          />
+          <input
+            type="text"
+            name="subject"
+            class="subject"
+            placeholder="YOUR SUBJECT"
+          />
+          <textarea
+            name="message"
+            class="message"
+            placeholder="YOUR MESSAGE"
+          ></textarea>
+          <button><a href="#">SEND MESSAGE</a></button>
+        </form>
+
+        <div class="contact-info">
+          <div class="content">
+            <h2>CONTACT INFO</h2>
+            <p
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+              minima, rem nesciunt quam odio ipsam tenetur..</p
+            >
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQhJREFUSEvtlU0OgjAQhd+Ui+A1JCaYsPAYeBL1JOo9MJAY9RhyENMxrfwUtFZAN0SWpTPfvDfDQPjxQz/OjxEB+BiFLHgLkD/MNs5J0pJmSabyVBbJc5SCEQ5LXkZzLoLDpAk4RawOGNgQsOoDYvCOQLGKFUGii68VFAD1ortdtS3SyGMFaCWXhS/lLXapUVV7wWFZxrC8Xd8qADhn0N4LkrUOsja/2czHPaSltVaLqjYBmwrSUtOu+pVSJ+ABelajfS1GsF21ORgfAgqMoebT/nQCmGqERGZ6bRvnHoBuX8Yf4PTr2aJvLjtCJqbJvLEq9Ex7WA3fqJZ17dTc88KIfpk9HXCG3QGw3LgZli/lmQAAAABJRU5ErkJggg=="
+              />
+            </div>
+            <div class="email">
+              <h3>EMAIL</h3>
+              <a href="#">k2@example.com</a>
+              <a href="#">info@support</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvVlOFtwjAQhd+ZsEcYo82PBpFK3QKYJDBJMkalUkFVuR2j2YPiqxwUETt2A04Ran5G9vt8d+8e4cofXVkftwEc5KwgopgoWtLdczWkyk4F6iPbgpFqUQaXQozXQyAGoC3evJqBtRBRGQoxATJjVzs0ZJRsViGtsgCzL4Div4ScDQBhJ+4300urMAC1e0CLrghXInmdXCquzxsAlo8LBhemULh4B6B/KGnOgUQ0CXWQE2C3aYiDnAD+fIpZ7bdtN7mq0OeU2ucC4o2Sl9I3H2cWHWS2IiA/XeKKxHjatKp+BH8Xp433L6M37FxbTaAlFFc8Qt6I9238r2lqD7zXpoSdHZC9ce3fDTfONkUvQMscZ8JzX4y0UUGAOrrfs1QJnhN0lLvzyhUnZ1VgN+MIQ0qEBzDHNdCTVUGA3mG3Dvx/wA97OpIZF7Ny+QAAAABJRU5ErkJggg=="
+              />
+            </div>
+            <div class="phone">
+              <h3>PHONE</h3>
+              <a href="#">12345678901</a>
+              <a href="#">12345678901</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVlJREFUSEu1VVFOwzAMfc64B+MYUCE2rUgcozsJ4yQdt+CjUyuhwDFWzkEXo3YqdE3ipEPrb1w/+9nvmXDhjy6cH0EA/nyaG9NkRHgAYwFwzUAF0JdSV1u6faulIkWAg043BDz7E7Rg9DpLio0vxgtgPtLyWHHER6jUXbF0RToBWD9mDM4jUv+GMPDi6sQCaDln0+xdyVVSdPFGp2y/c02G1nRfVMM3C0DiXQYAXF04AFY5gbLpHQBwzMICMHq1B2jeA/RV++ZxShfXKtndiBSN+Z0GAIzj7Q6E9QzNIIqigz5/BgzezpLdWqSI39MFK5TnDJkMlsE17fZ8ior7SjxqditZEJvXcxzVt7FeLwob3R+UzyZEgM4yuMmDhicYnQjQPh596bscCu+UIltYYwqjDo4bJJw82EFfjdVJgBZRB74t6U8nwNdjMUl3I0jRlKMTfdH+m3T4/w8yzrgZAShFxgAAAABJRU5ErkJggg=="
+              />
+            </div>
+            <div class="address">
+              <h3>ADDRESS</h3>
+              <p>Mohammadpur, <br />Dhaka,Bangladesh</p>
+            </div>
+          </div>
+          <div class="icon-container">
+            <h3>Visit My Social Media Profiles and Get Connected</h3>
+            <div class="icons">
+              <div class="icon icon1">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOtJREFUSEvtVAEOgjAM7P1Ef6I/kZfoT+Qn8hPhJZVb1gXIJB0TExOXLEBYe7vrtZCdF3bOL98FUNWHiJwqWfUAjpZjxkBVtTJ5CAeQ8q4BdCLSj/tSCuoBaAE0TLxFNg9AB+AcAe6lLDwAlIYSDSOJ6x4SEYCb6xA3Ae2bTzvD/zPneRhMaxAksiBVDckAGCDrdJsyrQLIyaWqZPFM3nfY9C2DhbMaAO3SbVUMokTseK6snWsB2HisyxIg2fkP8BGJrJOpM31PGwa3xHdrrNw59zQtnRDp/FqRiwdb5hZpUIaO33xNZ+DvA7wAYwXNGdbfQxoAAAAASUVORK5CYII="
+                />
+              </div>
+              <div class="icon">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYNJREFUSEvVVdFNQzEM9G1CJ4FO0nYS6CR0kz4mASYx7yI78kucPH4qRKRKr4rj8519CeTBCw/OL38PoKpPInIWkWcReVm/v8LvA8BtpsKUgaq+icirJWDixb4JSjCuKwDGpSsFsKrvIsJEaYLAjAUQnHEdmxGAJ78A8KrTCkMx3D8CIFhdHUCQhcELE7SHWiQD+VwZ3wBchgBZoK6IlADAYdZMVeUgvBuLynrDIAQdWHX47/SHcoXiNj1rAVjBGetYMKOqclLYj10Aiy+xAI7OtgWgjovrGKrioV1TWv9OUc4MgHrXCoJMXQOTZm8UKGxikKp2FI26G66AGDMmo5OryVR1o0AGwOBTO8+JqWhAX5WZTdy0yTyYzrMx4T4r92uCpipmbP2TNtmSEIBNHc69MaIBy9iGaZsbzYJprN2GeoXxqsiKGhnt2kwIATd3TNKX9N5KjRaSMyl1j2/Ad3gbGDplm44px88MVy678OD49FB7AnXMWm/sunN2wf1m7/8D/ADQoeQZptwRNwAAAABJRU5ErkJggg=="
+                />
+              </div>
+              <div class="icon">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAU1JREFUSEu1VYFtAyEM9G3STNJmk2aStJM0nSTdpOkkzt8LLD+YB5TGUsQrgM/2nQ3kyYYn+5cugKq+iQh/r2m9LeuPiPxxBcDvpjUBVPVFRL6S0z0fBDwC4FpZCKCqHyJynigfnX8D4L2NVQATzumUWXr7LEE2AKksvzuR0ymdXPKZIiDunzwvJcC1U/NDWesg4xuAQw7AAFT1PZHaSuAC4OQiZ3l4J6vL3yPpq7o8QI9Yq+9AMHbWA1CSjKhlrO1a+wEhsD+OZQYkt1SFB5sBMB58BhHAhrAoNVUNhYFFr2UG0cERgCgwE0SP5HUMrJG4UZD6JScU9U0IwIHGLP6DZONrptFGSTYFbThI8qOKWqNiFMCarALoaHwEYH/YNQZY/rsHYPuexJkHpwVQTdAhgGCo2fOYZhH5ohzDl6yapjvyfGir++g/5H25fAcXRb0Zoc7OswAAAABJRU5ErkJggg=="
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
