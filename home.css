@@ -676,6 +676,10 @@ p {
   cursor: pointer;
   width: 100%;
 }
+
+.gci_cards a {
+  text-decoration: none;
+}
 /* Hover Scale Effect */
 .gci-card:hover {
   transform: scale(1.05);

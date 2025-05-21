@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="marketplace.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script src="app.js"></script>
     <script src="bilingual.js"></script>
     <title>Marketplace</title>
@@ -21,11 +25,21 @@
       <nav>
         <div id="navbar">
           <ul>
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="index.html#weather_forecast">Weather Forecast</a></li>
             <li><a href="index.html#farming-advisory">Crop Suggestions</a></li>
-            <li><a href="index.html#green-city">Green City Initiative</a></li>
-            <li><a href="#page-header">Marketplace</a></li>
+            <li class="dropdown">
+              <a href="g_c_i.html"
+                >Green City Initiative <i class="fas fa-caret-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="g_c_i.html#vertical-gardening">Vertical Gardening</a>
+                <a href="g_c_i.html#container-gardening">Container Gardening</a>
+                <a href="g_c_i.html#rooftop-gardening">Rooftop Gardening</a>
+                <a href="g_c_i.html#community-gardening">Community Gardening</a>
+              </div>
+            </li>
+            <li><a class="active" href="#page-header">Marketplace</a></li>
             <li><a href="about.html">Articles</a></li>
             <li><a href="index.html#contact">Contact</a></li>
           </ul>

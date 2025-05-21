@@ -81,6 +81,25 @@ button.white {
   height: 20px;
 }
 
+/* PAGE HEADER  */
+
+#page-header {
+  background-image: url("marketplace_assets/design/page-header.jpeg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+  color: aliceblue;
+}
+
 #page-header {
   scroll-margin-top: 12vh;
 }
@@ -178,25 +197,6 @@ button.white {
   bottom: 10px;
   /* left: 200px; */
   right: 10px;
-}
-
-/* PAGE HEADER  */
-
-#page-header {
-  background-image: url("marketplace_assets/design/page-header.jpeg");
-  width: 100%;
-  height: 40vh;
-  background-size: cover;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 14px;
-}
-
-#page-header h2,
-#page-header p {
-  color: aliceblue;
 }
 
 /* NEWSLETTER */

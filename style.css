@@ -69,6 +69,13 @@ p {
   margin: 15px 0 20px 0;
 }
 
+a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #cce7d0;
+  /* margin: 15px 0 20px 0; */
+}
+
 .section-p1 {
   padding: 40px 80px;
 }
@@ -151,6 +158,76 @@ p {
 }
 #navbar li a:hover::after {
   background: #0ab6aa;
+}
+
+/* Dropdown */
+
+.dropbtn {
+  border-radius: 12px;
+  background-color: #6b8e23;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* .dropdown {
+  border-radius: 12px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: inline-block;
+} */
+
+.dropdown-content {
+  border-radius: 12px;
+  /* display: none; */
+  opacity: 0; /* here */
+  position: absolute;
+  background-color: #cce7d0;
+  min-width: 160px;
+  z-index: 1;
+  transition: all 0.25s ease-in;
+  transform: translateY(-10px);
+}
+
+.dropdown-content a {
+  color: black;
+  top: 50px;
+  left: 0px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {
+  cursor: auto;
+}
+.dropdown-content {
+  top: 35px;
+}
+.dropdown:hover .dropdown-content {
+  /*   display: block; */ /* no need for display block and none, you can depend on opacity as long as the position is absolute*/
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.dropdown:hover .dropbtn {
+  cursor: auto;
+  background-color: #495d29;
+}
+
+#navbar li .dropdown-content a.active::after,
+#navbar li .dropdown-content a:hover::after {
+  content: " ";
+  width: 0;
+  height: 0px;
+  background: transparent;
+}
+#navbar li .dropdown-content a:hover::after {
+  background: transparent;
 }
 
 /* HAMBURGER MENU */
@@ -277,6 +354,11 @@ nav .nav-icon {
   background-color: ☐ #0a101e;
   padding: 5% 10%;
 }
+
+#contact a {
+  color: #ebebeb;
+  text-decoration: none;
+}
 .contact-container {
   display: flex;
   justify-content: space-between;
@@ -338,7 +420,7 @@ nav .nav-icon {
 }
 #contact .contact-container form button {
   padding: 20px 35px;
-  background-color: #fec544;
+  background-color: #006a4e;
   border-radius: 30px;
   margin: 20px 0;
 }

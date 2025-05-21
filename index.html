@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>GreenAIert</title>
     <script src="app.js"></script>
     <script src="bilingual.js"></script>
@@ -24,7 +28,18 @@
             <li><a class="active" href="#hero">Home</a></li>
             <li><a href="#weather_forecast">Weather Forecast</a></li>
             <li><a href="#farming-advisory">Crop Suggestions</a></li>
-            <li><a href="#green-city">Green City Initiative</a></li>
+            <li class="dropdown">
+              <a href="#green-city"
+                >Green City Initiative <i class="fas fa-caret-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="g_c_i.html">Overview</a>
+                <a href="g_c_i.html#vertical-gardening">Vertical Gardening</a>
+                <a href="g_c_i.html#container-gardening">Container Gardening</a>
+                <a href="g_c_i.html#rooftop-gardening">Rooftop Gardening</a>
+                <a href="g_c_i.html#community-gardening">Community Gardening</a>
+              </div>
+            </li>
             <li><a href="marketplace.html">Marketplace</a></li>
             <li><a href="articles.html">Articles</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -222,6 +237,7 @@
           techniques</p
         >
       </div>
+
       <div class="gci_cards">
         <div class="gci-card vertical_g">
           <div class="card-content">
@@ -230,7 +246,11 @@
               >Maximize small spaces by growing plants vertically on walls or
               trellises</p
             >
-            <button>Learn Techniques</button>
+            <button
+              ><a href="g_c_i.html#vertical-gardening"
+                >Learn Techniques</a
+              ></button
+            >
           </div>
         </div>
 
@@ -239,7 +259,11 @@
             <h3>Container gardening</h3>
 
             <p>Grow plants in pots and containers on balconies and terraces</p>
-            <button>Learn Techniques</button>
+            <button
+              ><a href="g_c_i.html#container-gardening"
+                >Learn Techniques</a
+              ></button
+            >
           </div>
         </div>
 
@@ -248,7 +272,11 @@
             <h3>Rooftop gardening</h3>
 
             <p>Transform unused rooftops into productive green spaces</p>
-            <button>Learn Techniques</button>
+            <button
+              ><a href="g_c_i.html#rooftop-gardening"
+                >Learn Techniques</a
+              ></button
+            >
           </div>
         </div>
 
@@ -256,7 +284,11 @@
           <div class="card-content">
             <h3>Community gardening</h3>
             <p>Start or join shared gardening spaces in your neighborhood</p>
-            <button>Learn Techniques</button>
+            <button
+              ><a href="g_c_i.html#community-gardening"
+                >Learn Techniques</a
+              ></button
+            >
           </div>
         </div>
       </div>

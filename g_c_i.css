@@ -1,0 +1,56 @@
+/* body {
+  background-color: #729c65;
+} */
+
+/* body {
+  height: 500vh;
+  background: url(assets/green-paint-wall-background-texture.jpg);
+  position: relative;
+} */
+
+/* Creates the blurred background */
+/* body::before {
+  content: "";
+  position: fixed;
+  width: 103%;
+  overflow: hidden;
+  top: 0;
+  left: -5px;
+  right: 0;
+  bottom: -5px;
+  background: url(assets/green-paint-wall-background-texture.jpg) center/contain;
+  filter: blur(5px);
+  z-index: -1;
+  opacity: 0.9;
+} */
+
+/* PAGE HEADER  */
+
+#page-header {
+  background-image: url("assets/green_bg1.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 14px;
+  scroll-margin-top: 12vh;
+}
+/* 
+#page-header h2,
+#page-header p {
+  color: aliceblue;
+} */
+
+.green {
+  color: #006a4e;
+}
+.ai {
+  color: #ff3131;
+}
+.ert {
+  color: #ff3131;
+}
