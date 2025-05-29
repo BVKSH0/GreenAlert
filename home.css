@@ -253,13 +253,17 @@ p {
 }
 
 .forecast-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   position: relative;
-  background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Important for containing the blur */
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -309,11 +313,11 @@ p {
 }
 
 .high-temp {
-  color: #ff3131;
+  color: #f34e4e;
 }
 
 .low-temp {
-  color: #006a4e;
+  color: #02bb8a;
 }
 /* Add these styles to your CSS */
 .last-updated {
@@ -686,6 +690,11 @@ p {
   box-shadow: 0 10px 25px rgba(0, 106, 78, 0.3);
   z-index: 10; /* Bring forward when scaled */
   transition: all 0.3s ease-in-out;
+}
+
+.gci-card:hover button {
+  background-color: #038864;
+  transition: 0.3s ease-in-out;
 }
 
 .card-content {

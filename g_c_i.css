@@ -1,6 +1,6 @@
-/* body {
+body {
   background-color: #729c65;
-} */
+}
 
 /* body {
   height: 500vh;
@@ -23,7 +23,11 @@
   z-index: -1;
   opacity: 0.9;
 } */
-
+#navbar li a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
 /* PAGE HEADER  */
 
 #page-header {
@@ -39,11 +43,6 @@
   padding: 14px;
   scroll-margin-top: 12vh;
 }
-/* 
-#page-header h2,
-#page-header p {
-  color: aliceblue;
-} */
 
 .green {
   color: #006a4e;
@@ -53,4 +52,104 @@
 }
 .ert {
   color: #ff3131;
+}
+/* 
+#vertical-gardening,
+#container-gardening,
+#rooftop-gardening,
+#community-gardening {
+  height: 91vh;
+  scroll-margin-top: 12vh;
+
+  width: 100%;
+  background-size: cover;
+  padding: 0px 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#vertical-gardening,
+#container-gardening,
+#rooftop-gardening,
+#community-gardening button {
+  position: relative; 
+  background-color: transparent;
+  color: #c2a770;
+  border: 1px solid transparent;
+  border-radius: 1vh;
+  padding: 8px 16px 8px 16px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.27s;
+  overflow: hidden; 
+  z-index: 1; 
+}
+
+#vertical-gardening,
+#container-gardening,
+#rooftop-gardening,
+#community-gardening .hrbtn {
+  margin-left: 25px;
+}
+
+
+#vertical-gardening,
+#container-gardening,
+#rooftop-gardening,
+#community-gardening button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(7, 58, 55, 0.5); 
+  backdrop-filter: blur(5px); 
+  z-index: -1;
+  border-radius: 5vh; 
+}
+
+
+#vertical-gardening,
+#container-gardening,
+#rooftop-gardening,
+#community-gardening button:hover {
+  color: #09968c;
+}
+
+#vertical-gardening,
+#container-gardening,
+#rooftop-gardening,
+#community-gardening button:hover::before {
+  background: rgba(7, 58, 55, 0.7); 
+} */
+
+/* vertical-gardening */
+
+.vertical-gardening {
+  background: url(assets/20250520_2153_image.png);
+}
+
+.vertical-gardening,
+.container-gardening,
+.rooftop-gardening,
+.community-gardening {
+  background-size: cover;
+
+  height: 96vh;
+  scroll-margin-top: 12vh;
+  margin: 10% 10%;
+  /* width: 100%; */
+  /* padding: 0px 30vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 2px 16px 77px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 16px 77px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 16px 77px 10px rgba(0, 0, 0, 0.75);
 }
